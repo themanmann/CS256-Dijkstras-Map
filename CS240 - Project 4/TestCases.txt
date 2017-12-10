@@ -1,0 +1,14 @@
+Test Cases:
+All:
+1. All queues enqueue successfully
+2. All queues dequeue correctly
+3. Empty queues return null when dequeueing while empty
+
+FIFO Queues:
+4. FIFO Queues maintain order when enqueueing and dequeueing multiple items
+5. FIFO Queues implemented generically
+
+Priority Queue:
+6. Priority Queue dequeues highest priority first
+7. Properly handles an assignment with 0 days remaining (due today)
+8. Differentiates priority between assignments with value lower than days remaining (int restraints)

@@ -1,0 +1,112 @@
+Test Case 1: All queues enqueue successfully
+Enqueueing Assignment: "this is an assignment"
+ArrayQueue: true
+DoublyLinkedQueue: true
+PriorityQueue: true
+Press ENTER to continue.
+
+
+Test Case 2: All queues dequeue correctly
+Dequeing from all queues. Expected: "this..." dequeued:
+Array Queue: 
+Title: this is an assignment
+Value: 0
+Days Until Due: 0
+Doubly Linked Queue: 
+Title: this is an assignment
+Value: 0
+Days Until Due: 0
+Priority Queue: 
+Title: this is an assignment
+Value: 0
+Days Until Due: 0
+Press ENTER to continue.
+
+
+Test Case 3: Empty queues return null when dequeueing while empty
+Array Queue: 
+null
+Doubly Linked Queue: 
+null
+Priority Queue: 
+null
+Press ENTER to continue.
+
+
+Test Case 4: FIFO Queues maintain order when enqueueing and dequeueing multiple items
+Enqueueing Assignment: "first"
+Enqueueing Assignment: "second"
+Enqueueing Assignment: "third"
+Dequeuing. Expected: first, second, then third
+Array Queue: 
+Title: first
+Value: 0
+Days Until Due: 0
+Title: second
+Value: 0
+Days Until Due: 0
+Title: third
+Value: 0
+Days Until Due: 0
+Doubly Linked Queue: 
+Title: first
+Value: 0
+Days Until Due: 0
+Title: second
+Value: 0
+Days Until Due: 0
+Title: third
+Value: 0
+Days Until Due: 0
+Press ENTER to continue.
+
+
+Test Case 5: FIFO Queues implemented generically
+Initializing Integer FIFO Queues
+Adding 1, 2, 3, 4, 5
+Dequeueing. Expected: 1, 2, 3, 4, 5
+Array Queue: 
+1
+2
+3
+4
+5
+Doubly Linked Queue: 
+1
+2
+3
+4
+5
+Press ENTER to continue.
+
+
+Test Case 6: Priority Queue dequeues highest priority first
+Test Case 7: Properly handles an assignment with 0 days remaining (due today)
+Enqueing the following:
+Assignment: "first"; value: 1; days until due: 1 (effective priority = 1)
+Assignment: "second"; value: 1; days until due: 4 (effective priority = 0)
+Assignment: "third"; value: 1; days until due: 0 (effective priority = above all not due today)
+Dequeueing. Expected: third, first, second
+Title: third
+Value: 1
+Days Until Due: 0
+Title: first
+Value: 1
+Days Until Due: 1
+Title: second
+Value: 1
+Days Until Due: 4
+Press ENTER to continue.
+
+
+Test Case 8: Differentiates priority between assignments with value lower than days remaining (int restraints)
+Enqueing the following:
+Assignment: "first"; value: 1; days until due: 4 (lower priority)
+Assignment: "second"; value: 1; days until due: 3 (higher priority)
+Dequeueing. Expected: second, first
+Title: second
+Value: 1
+Days Until Due: 3
+Title: first
+Value: 1
+Days Until Due: 4
